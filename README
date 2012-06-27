@@ -3,7 +3,7 @@ Tennis ratings modeled with DBN (Dynamic Bayesian Networks) and EM (Expectation 
 samiam/tennis_rating_dbn.net - Unrolled DBN for tennis ratings for 3 time slices.
 
 bnt/* - 2TBN network with examples for creating, learning and inference.
-Before running those example, install bnt octave library. Please refer
+Before running those examples, install bnt octave library. Please refer
 to bnt documentation for more details.
 
 Bayesian tools used for tennis rating modelling with DBN and EM:

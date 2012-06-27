@@ -1,6 +1,9 @@
 function marginals = inferDBNTennis(bnet) 
 
-evidence = cell(6,3);
+N = bnet.nnodes_per_slice; % Number of nodes per slice.
+M =3; % Number of time slices.
+
+evidence = cell(N,M);
 evidence(4,1) = 1;
 evidence(6,2) = 1;
 
