@@ -1,19 +1,30 @@
 net
 {
-	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@129d25c";
-	huginenginegenerator3061656038650325130L = "edu.ucla.belief.inference.JoinTreeSettings@fb2366";
-	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@59ffc7";
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@7b6c50";
+	huginenginegenerator3061656038650325130L = "edu.ucla.belief.inference.JoinTreeSettings@1042592";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@13e9bf1";
 	node_size = (130.0 55.0);
 }
 
-node R2_0
+node R3_2
 {
 	states = ("r1" "r2" "r3" );
-	position = (238 -71);
+	position = (602 -165);
 	excludepolicy = "include whole CPT";
 	ismapvariable = "false";
 	ID = "variable0";
-	label = "R2_0";
+	label = "R3_2";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node S2_R2_R3
+{
+	states = ("w" "l" );
+	position = (721 -438);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "S2_R2_R3";
 	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
 	diagnosistype = "AUXILIARY";
 }
@@ -28,14 +39,47 @@ node R1_2
 	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
 	diagnosistype = "AUXILIARY";
 }
+node S0_R1_R3
+{
+	states = ("w" "l" );
+	position = (326 -364);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "S0_R1_R3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node S1_R1_R3
+{
+	states = ("w" "l" );
+	position = (518 -364);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "S1_R1_R3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
 node S2_R1_R3
 {
 	states = ("w" "l" );
-	position = (721 -286);
+	position = (714 -364);
 	excludepolicy = "include whole CPT";
 	ismapvariable = "false";
 	ID = "variable1";
 	label = "S2_R1_R3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node S1_R1_R2
+{
+	states = ("w" "l" );
+	position = (515 -289);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "S1_R1_R2";
 	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
 	diagnosistype = "AUXILIARY";
 }
@@ -61,50 +105,6 @@ node R3_0
 	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
 	diagnosistype = "AUXILIARY";
 }
-node R3_2
-{
-	states = ("r1" "r2" "r3" );
-	position = (602 -165);
-	excludepolicy = "include whole CPT";
-	ismapvariable = "false";
-	ID = "variable0";
-	label = "R3_2";
-	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
-	diagnosistype = "AUXILIARY";
-}
-node R3_1
-{
-	states = ("r1" "r2" "r3" );
-	position = (427 -170);
-	excludepolicy = "include whole CPT";
-	ismapvariable = "false";
-	ID = "variable0";
-	label = "R3_1";
-	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
-	diagnosistype = "AUXILIARY";
-}
-node R1_1
-{
-	states = ("r1" "r2" "r3" );
-	position = (420 7);
-	excludepolicy = "include whole CPT";
-	ismapvariable = "false";
-	ID = "variable0";
-	label = "R1_1";
-	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
-	diagnosistype = "AUXILIARY";
-}
-node S1_R2_R3
-{
-	states = ("w" "l" );
-	position = (518 -285);
-	excludepolicy = "include whole CPT";
-	ismapvariable = "false";
-	ID = "variable1";
-	label = "S1_R2_R3";
-	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
-	diagnosistype = "AUXILIARY";
-}
 node S0_R1_R2
 {
 	states = ("w" "l" );
@@ -113,6 +113,17 @@ node S0_R1_R2
 	ismapvariable = "false";
 	ID = "variable1";
 	label = "S0_R1_R2";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node S2_R1_R2
+{
+	states = ("w" "l" );
+	position = (714 -289);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "S2_R1_R2";
 	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
 	diagnosistype = "AUXILIARY";
 }
@@ -127,6 +138,39 @@ node R2_2
 	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
 	diagnosistype = "AUXILIARY";
 }
+node R3_1
+{
+	states = ("r1" "r2" "r3" );
+	position = (427 -170);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "R3_1";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node S0_R2_R3
+{
+	states = ("w" "l" );
+	position = (329 -438);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "S0_R2_R3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node R2_0
+{
+	states = ("r1" "r2" "r3" );
+	position = (238 -71);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "R2_0";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
 node R2_1
 {
 	states = ("r1" "r2" "r3" );
@@ -138,15 +182,75 @@ node R2_1
 	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
 	diagnosistype = "AUXILIARY";
 }
-potential ( R2_0 | )
+node S1_R2_R3
 {
-	data = (	0.3333333333333333	0.3333333333333333	0.3333333333333333	);
+	states = ("w" "l" );
+	position = (515 -439);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "S1_R2_R3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node R1_1
+{
+	states = ("r1" "r2" "r3" );
+	position = (420 7);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "R1_1";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+potential ( R3_2 | R3_1 )
+{
+	data = ((	0.98	0.01	0.01	)
+		(	0.01	0.98	0.01	)
+		(	0.01	0.02	0.97	));
+}
+potential ( S2_R2_R3 | R2_2 R3_2 )
+{
+	data = (((	0.5	0.5	)
+		(	0.33333	0.66667	)
+		(	0.25	0.75	))
+		((	0.66667	0.33333	)
+		(	0.5	0.5	)
+		(	0.4	0.6	))
+		((	0.75	0.25	)
+		(	0.6	0.4	)
+		(	0.5	0.5	)));
 }
 potential ( R1_2 | R1_1 )
 {
 	data = ((	0.98	0.01	0.01	)
 		(	0.01	0.98	0.01	)
 		(	0.01	0.02	0.97	));
+}
+potential ( S0_R1_R3 | R1_0 R3_0 )
+{
+	data = (((	0.5	0.5	)
+		(	0.33333	0.66667	)
+		(	0.25	0.75	))
+		((	0.66667	0.33333	)
+		(	0.5	0.5	)
+		(	0.4	0.6	))
+		((	0.75	0.25	)
+		(	0.6	0.4	)
+		(	0.5	0.5	)));
+}
+potential ( S1_R1_R3 | R1_1 R3_1 )
+{
+	data = (((	0.5	0.5	)
+		(	0.33333	0.66667	)
+		(	0.25	0.75	))
+		((	0.66667	0.33333	)
+		(	0.5	0.5	)
+		(	0.4	0.6	))
+		((	0.75	0.25	)
+		(	0.6	0.4	)
+		(	0.5	0.5	)));
 }
 potential ( S2_R1_R3 | R1_2 R3_2 )
 {
@@ -160,33 +264,7 @@ potential ( S2_R1_R3 | R1_2 R3_2 )
 		(	0.6	0.4	)
 		(	0.5	0.5	)));
 }
-potential ( R1_0 | )
-{
-	data = (	0.3333333333333333	0.3333333333333333	0.3333333333333333	);
-}
-potential ( R3_0 | )
-{
-	data = (	0.3333333333333333	0.3333333333333333	0.3333333333333333	);
-}
-potential ( R3_2 | R3_1 )
-{
-	data = ((	0.98	0.01	0.01	)
-		(	0.01	0.98	0.01	)
-		(	0.01	0.02	0.97	));
-}
-potential ( R3_1 | R3_0 )
-{
-	data = ((	0.98	0.01	0.01	)
-		(	0.01	0.98	0.01	)
-		(	0.01	0.02	0.97	));
-}
-potential ( R1_1 | R1_0 )
-{
-	data = ((	0.98	0.01	0.01	)
-		(	0.01	0.98	0.01	)
-		(	0.01	0.02	0.97	));
-}
-potential ( S1_R2_R3 | R2_1 R3_1 )
+potential ( S1_R1_R2 | R1_1 R2_1 )
 {
 	data = (((	0.5	0.5	)
 		(	0.33333	0.66667	)
@@ -198,7 +276,27 @@ potential ( S1_R2_R3 | R2_1 R3_1 )
 		(	0.6	0.4	)
 		(	0.5	0.5	)));
 }
+potential ( R1_0 | )
+{
+	data = (	0.2	0.5	0.3	);
+}
+potential ( R3_0 | )
+{
+	data = (	0.2	0.5	0.3	);
+}
 potential ( S0_R1_R2 | R1_0 R2_0 )
+{
+	data = (((	0.5	0.5	)
+		(	0.33333	0.66667	)
+		(	0.25	0.75	))
+		((	0.66667	0.33333	)
+		(	0.5	0.5	)
+		(	0.4	0.6	))
+		((	0.75	0.25	)
+		(	0.6	0.4	)
+		(	0.5	0.5	)));
+}
+potential ( S2_R1_R2 | R1_2 R2_2 )
 {
 	data = (((	0.5	0.5	)
 		(	0.33333	0.66667	)
@@ -216,7 +314,47 @@ potential ( R2_2 | R2_1 )
 		(	0.01	0.98	0.01	)
 		(	0.01	0.02	0.97	));
 }
+potential ( R3_1 | R3_0 )
+{
+	data = ((	0.98	0.01	0.01	)
+		(	0.01	0.98	0.01	)
+		(	0.01	0.02	0.97	));
+}
+potential ( S0_R2_R3 | R2_0 R3_0 )
+{
+	data = (((	0.5	0.5	)
+		(	0.33333	0.66667	)
+		(	0.25	0.75	))
+		((	0.66667	0.33333	)
+		(	0.5	0.5	)
+		(	0.4	0.6	))
+		((	0.75	0.25	)
+		(	0.6	0.4	)
+		(	0.5	0.5	)));
+}
+potential ( R2_0 | )
+{
+	data = (	0.2	0.5	0.3	);
+}
 potential ( R2_1 | R2_0 )
+{
+	data = ((	0.98	0.01	0.01	)
+		(	0.01	0.98	0.01	)
+		(	0.01	0.02	0.97	));
+}
+potential ( S1_R2_R3 | R2_1 R3_1 )
+{
+	data = (((	0.5	0.5	)
+		(	0.33333	0.66667	)
+		(	0.25	0.75	))
+		((	0.66667	0.33333	)
+		(	0.5	0.5	)
+		(	0.4	0.6	))
+		((	0.75	0.25	)
+		(	0.6	0.4	)
+		(	0.5	0.5	)));
+}
+potential ( R1_1 | R1_0 )
 {
 	data = ((	0.98	0.01	0.01	)
 		(	0.01	0.98	0.01	)
