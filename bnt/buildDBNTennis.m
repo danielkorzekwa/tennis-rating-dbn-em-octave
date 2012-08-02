@@ -30,7 +30,7 @@ eclass = [eclass1 eclass2];
 
 bnet = mk_dbn(intra, inter, ns,'eclass1', eclass1, 'eclass2', eclass2);
 %bnet = mk_dbn(intra, inter, ns);
-prior0 = [1/3 1/3 1/3];
+prior0 = [0.2 0.5 0.3];
 transmat0 = [0.98 0.01 0.01 ; 0.01 0.98 0.01 ;0.01 0.02 0.97];
 obsmat0 = [0.5 2/3 0.75 1/3 0.5 0.6 0.25 0.4 0.5 0.5 1/3 0.25 2/3 0.5 0.4 0.75 0.6 0.5];
 bnet.CPD{1} = tabular_CPD(bnet, 1, prior0);
